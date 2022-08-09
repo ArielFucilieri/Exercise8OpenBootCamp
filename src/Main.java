@@ -12,37 +12,35 @@ public class Main {
         System.out.println("Phone Number: "+ person.getPhoneNumber());
 
 
+    }
+}
 
+class Person{
+    private int age;
+    private String name;
+    private int phoneNumber;
 
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    static class Person{
-        private int age;
-        private String name;
-        private int phoneNumber;
+    public void setName(String name) {
+        this.name = name;
+    }
 
-        public void setAge(int age) {
-            this.age = age;
-        }
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
 
-        public void setName(String name) {
-            this.name = name;
-        }
+    public int getAge() {
+        return age;
+    }
 
-        public void setPhoneNumber(int phoneNumber) {
-            this.phoneNumber = phoneNumber;
-        }
+    public String getName() {
+        return name;
+    }
 
-        public int getAge() {
-            return age;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public int getPhoneNumber() {
-            return phoneNumber;
-        }
+    public int getPhoneNumber() {
+        return phoneNumber;
     }
 }
